@@ -6,7 +6,7 @@ from wtforms.validators import DataRequired
 class sign_up(Form):
     email=StringField('Email',validators=[DataRequired()])
     phone=IntegerField('Number', validators=[DataRequired()])
-    otp=IntegerField(('xxxx'), validators=[DataRequired()])
+   # otp=IntegerField(('xxxx'), validators=[DataRequired()])
 
 
 class login(Form):
