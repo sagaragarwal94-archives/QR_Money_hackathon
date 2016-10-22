@@ -60,7 +60,7 @@
 
                         <label for ="phone" placeholder='Mobile Number'>Mobile No.</label>
                         <input id="phone"/>
-
+                        <br>
 
                         <label for ="otp">OTP</label>
                         <input id="phone"/>
@@ -98,12 +98,24 @@
                   <h4 class="modal-title">Please Sign Up</h4>
                 </div>
                 <div class="modal-body">
-                  <form action=" " method ="get">
-                    <label for ="email">Email</label>
-                    <input id="name"/>
-                    <label for ="phone">Phone</label>
-                    <input id="phone"/>
-                    <input type="Submit" value ="go"/>
+                  <form action=" " method ="get" class="form-horizontal">
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="email">Email:</label>
+                      <div class="col-sm-5">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                      </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                      <label class="control-label col-sm-2" for="pwd">Mobile No.</label>
+                      <div class="col-sm-5">
+                        <input type="text" class="form-control" id="no." placeholder="Enter Number">
+                      </div>
+                    </div>
+                    <br>
+                    <br>
+                    <input type="Submit" class="btn btn-primary" value ="Submit"/>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
