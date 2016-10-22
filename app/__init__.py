@@ -1,5 +1,7 @@
 from flask import Flask
-from flask_material import Material
+from flask_bootstrap import Bootstrap
+
 app = Flask(__name__)
-Material(app)
+Bootstrap(app)
+
 from app import views, model
