@@ -1,3 +1,4 @@
+
 import os
 import base64
 from io import StringIO
@@ -31,6 +32,7 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(64), index=True)
     password_hash = db.Column(db.String(128))
     otp_secret = db.Column(db.String(16))
+    credits =  db.Column(db.Integer)
 
     def __init__(self, **kwargs):
         super(User, self).__init__(**kwargs)
@@ -98,7 +100,7 @@ def register():
             flash('Username already exists.')
             return redirect(url_for('register'))
         # add new user to the database
-        user = User(username=form.username.data, password=form.password.data)
+        user = User(username=form.username.data, password=form.password.data, credits = 100)
         db.session.add(user)
         db.session.commit()
 
@@ -178,4 +180,4 @@ db.create_all()
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', debug=True)
+    app.run(host='0.0.0.0', port = 5001, debug=True)

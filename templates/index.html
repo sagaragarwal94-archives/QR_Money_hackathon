@@ -3,6 +3,7 @@
 {% block page_content %}
     {% if current_user.is_authenticated() %}
     <h1>Welcome, {{ current_user.username }}!</h1>
+    <hr>Credits To Spend: {{current_user.credits}}!</hr>
     <button type ="button" href="#">Give money </button>
     <button type ="button" href="#">Take money </button>
     {% else %}
