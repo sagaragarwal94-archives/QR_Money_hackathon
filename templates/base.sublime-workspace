@@ -1,0 +1,395 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"m",
+				"main	main()"
+			],
+			[
+				"in",
+				"insert"
+			],
+			[
+				"i",
+				"inc	#include \"…\""
+			],
+			[
+				"prev",
+				"prev_node"
+			],
+			[
+				"ne",
+				"newnode"
+			],
+			[
+				"st",
+				"start"
+			],
+			[
+				"cu",
+				"cury"
+			],
+			[
+				"h",
+				"head"
+			],
+			[
+				"cur",
+				"curx"
+			],
+			[
+				"pre",
+				"prevx"
+			],
+			[
+				"n",
+				"next"
+			],
+			[
+				"c",
+				"current"
+			],
+			[
+				"insert",
+				"Insert"
+			],
+			[
+				"E",
+				"Extension"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"marig",
+				"margin-bottom"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"print",
+				"printf	printf …"
+			],
+			[
+				"to",
+				"top"
+			],
+			[
+				"pri",
+				"print"
+			],
+			[
+				"is",
+				"isEmpty"
+			],
+			[
+				"d",
+				"d"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/tayba/Desktop/qr_crypto/app/views.py",
+		"/home/tayba/Desktop/m_try/app/templates/login.html",
+		"/home/tayba/Desktop/m_try/app/templates/base.html",
+		"/home/tayba/bst/bst.go",
+		"/home/tayba/Desktop/microblog/templates/error.html",
+		"/home/tayba/Desktop/microblog/templates/base.html",
+		"/home/tayba/CSI-Project/index.html",
+		"/home/tayba/Desktop/go/helloworld.go",
+		"/home/tayba/Desktop/imp/imo.txt",
+		"/home/tayba/Desktop/microblog/templates/1.html",
+		"/home/tayba/Desktop/microblog/templates/page1.html",
+		"/home/tayba/Desktop/codechef/prime.c",
+		"/home/tayba/Desktop/taskcluster-cli/help.go",
+		"/home/tayba/Desktop/algo/un.c",
+		"/home/tayba/Desktop/algo/dc.c",
+		"/home/tayba/Desktop/algo/str.c",
+		"/home/tayba/Desktop/DS1/l1.h",
+		"/home/tayba/Desktop/DS1/l1.c",
+		"/home/tayba/Desktop/DS1/stack.h",
+		"/home/tayba/Desktop/DS1/stack.c",
+		"/home/tayba/Desktop/DS1/useS.c",
+		"/home/tayba/Desktop/DS1/useLink.c",
+		"/home/tayba/Desktop/DS1/link.c",
+		"/home/tayba/Desktop/DS1/usel1.c",
+		"/home/tayba/Desktop/DS1/linked.h",
+		"/home/tayba/Desktop/DS1/strings.c",
+		"/home/tayba/Desktop/DS1/mat.h",
+		"/home/tayba/Desktop/DS1/mat1.c",
+		"/home/tayba/Desktop/DS1/useLins.c",
+		"/home/tayba/Desktop/DS1/strings.h",
+		"/home/tayba/Desktop/DS1/s1.c",
+		"/home/tayba/Desktop/DS1/mat.c",
+		"/home/tayba/Desktop/DS1/lins.h",
+		"/home/tayba/Desktop/DS1/lins.c",
+		"/home/tayba/Desktop/DS1/useStrings.c",
+		"/home/tayba/Desktop/DS1/post.c",
+		"/home/tayba/Downloads/landing-page-bootstrapious/index.html",
+		"/home/tayba/Desktop/comp.c",
+		"/home/tayba/Downloads/startbootstrap-creative-gh-pages/index.html",
+		"/home/tayba/Downloads/landing-page-bootstrapious/css/bootstrap.css",
+		"/home/tayba/Downloads/landing-page-bootstrapious/css/style.default.css",
+		"/home/tayba/Downloads/startbootstrap-creative-gh-pages/css/creative.css",
+		"/home/tayba/Downloads/startbootstrap-creative-gh-pages/css/creative.min.css",
+		"/home/tayba/Downloads/landing-page-bootstrapious/css/animate.css",
+		"/home/tayba/Downloads/landing-page-bootstrapious/css/custom.css",
+		"/home/tayba/Desktop/DS/linked.h",
+		"/home/tayba/Desktop/DS/linked.c",
+		"/home/tayba/Desktop/DS/link.c",
+		"/home/tayba/Desktop/DS/length.c",
+		"/home/tayba/Desktop/airmozilla/airmozilla/base/static/select2/select2-bootstrap.css",
+		"/home/tayba/Desktop/airmozilla/static/manage/css/bootstrap.min.css",
+		"/home/tayba/Desktop/airmozilla/static/manage/js/bootstrap-datepicker.js",
+		"/home/tayba/Desktop/airmozilla/static/manage/js/bootstrap-typeahead.js",
+		"/home/tayba/Desktop/airmozilla/static/manage/js/bootstrap-typeahead.min.js",
+		"/home/tayba/Desktop/airmozilla/venv/lib/python2.7/site-packages/bootstrapform/templatetags/bootstrap.py",
+		"/home/tayba/Desktop/airmozilla/airmozilla/suggest/jinja2/suggest/_breadcrumb.html",
+		"/home/tayba/Desktop/airmozilla/airmozilla/suggest/jinja2/suggest/description.html",
+		"/home/tayba/Desktop/airmozilla/airmozilla/manage/jinja2/manage/event_edit_metadata.html",
+		"/home/tayba/Desktop/airmozilla/airmozilla/main/jinja2/main/feeds/event_description.html",
+		"/home/tayba/Desktop/airmozilla/venv/lib/python2.7/site-packages/coverage/htmlfiles/index.html",
+		"/home/tayba/Desktop/airmozilla/airmozilla/manage/jinja2/manage/_default_form.html",
+		"/home/tayba/Desktop/airmozilla/airmozilla/manage/jinja2/manage/_form_buttons.html",
+		"/home/tayba/Desktop/airmozilla/airmozilla/suggest/jinja2/suggest/_default_form_upload.html",
+		"/home/tayba/Desktop/airmozilla/airmozilla/suggest/jinja2/suggest/_default_form.html",
+		"/home/tayba/Desktop/airmozilla/airmozilla/manage/static/manage/css/event-edit.css",
+		"/home/tayba/Desktop/airmozilla/venv/lib/python2.7/site-packages/bootstrapform/templates/bootstrapform/field.html",
+		"/home/tayba/Desktop/airmozilla/venv/lib/python2.7/site-packages/bootstrapform/templates/bootstrapform/formset.html",
+		"/home/tayba/Desktop/airmozilla/venv/lib/python2.7/site-packages/bootstrapform/templates/bootstrapform/form.html",
+		"/home/tayba/Desktop/airmozilla/airmozilla/main/jinja2/main/event_edit.html",
+		"/home/tayba/Desktop/airmozilla/airmozilla/manage/jinja2/manage/event_edit.html",
+		"/home/tayba/Desktop/airmozilla/airmozilla/main/jinja2/main/event_edit_chapters.html",
+		"/home/tayba/Desktop/airmozilla/static/select2/select2-bootstrap.css",
+		"/home/tayba/Desktop/airmozilla/airmozilla/manage/jinja2/manage/channel_edit.html",
+		"/home/tayba/Desktop/airmozilla/airmozilla/manage/jinja2/manage/manage_base.html",
+		"/home/tayba/Desktop/airmozilla/airmozilla/base/jinja2/base.html",
+		"/home/tayba/Desktop/airmozilla/airmozilla/manage/static/manage/js/channel-html-edit.js",
+		"/home/tayba/Desktop/airmozilla/venv/lib/python2.7/site-packages/django_jsonview-0.5.0.dist-info/DESCRIPTION.rst",
+		"/home/tayba/Desktop/DS/usePost.c",
+		"/home/tayba/Desktop/DS/useEval.c",
+		"/home/tayba/Desktop/DS/post.c",
+		"/home/tayba/Desktop/DS/post.h",
+		"/home/tayba/Desktop/DS/stack.h",
+		"/home/tayba/Desktop/DS/stack.c",
+		"/home/tayba/Desktop/airmozilla/airmozilla/main/fields.py",
+		"/home/tayba/Desktop/airmozilla/manage.py",
+		"/home/tayba/Desktop/airmozilla/.venv/lib/python2.7/site-packages/jinja2/utils.py",
+		"/home/tayba/Desktop/airmozilla/airmozilla/main/models.py",
+		"/home/tayba/Desktop/airmozilla/.venv/lib/python2.7/site-packages/jinja2/ext.py",
+		"/home/tayba/Desktop/airmozilla/.venv/lib/python2.7/site-packages/jinja2/nodes.py",
+		"/home/tayba/Desktop/airmozilla/.venv/lib/python2.7/site-packages/jinja2/environment.py",
+		"/home/tayba/Desktop/airmozilla/.git/hooks/pre-commit",
+		"/home/tayba/Desktop/templates/user_settings.html",
+		"/home/tayba/Desktop/templates/static/style1.css",
+		"/home/tayba/Desktop/static/style1.css",
+		"/home/tayba/Desktop/medqa/app/templates/user/profile_settings.html",
+		"/home/tayba/Desktop/medqa/app/templates/user/userprofile.html",
+		"/home/tayba/Desktop/templates/profile_settings.html",
+		"/home/tayba/Desktop/DS/stacks.c",
+		"/home/tayba/Desktop/DS/uselink.c",
+		"/home/tayba/Desktop/DS/link.h",
+		"/home/tayba/devup.py",
+		"/home/tayba/Desktop/airmozilla/airmozilla/settings/local.py",
+		"/home/tayba/Desktop/medqa/database.md",
+		"/home/tayba/Desktop/codechef/nim.c",
+		"/home/tayba/vhdl.txt",
+		"/home/tayba/Desktop/codechef/FLOW018.c",
+		"/home/tayba/Desktop/codechef/FLOW010.c",
+		"/home/tayba/Desktop/codechef/REC.c",
+		"/home/tayba/Desktop/codechef/TWC.c",
+		"/home/tayba/Desktop/codechef/SMPAIR.c",
+		"/home/tayba/Desktop/codechef/y16.c",
+		"/home/tayba/Desktop/codechef/FLOW016.c",
+		"/home/tayba/Desktop/codechef/FLOW013.c",
+		"/home/tayba/Desktop/codechef/ALTARAY.c",
+		"/home/tayba/Desktop/codechef/GDOG.c",
+		"/home/tayba/Desktop/codechef/MNMX.c",
+		"/home/tayba/Desktop/DS/traverse.c",
+		"/home/tayba/Desktop/codechef/FLOW009.c",
+		"/home/tayba/Desktop/codechef/RECTSQ.c",
+		"/home/tayba/Desktop/DS/insert.c",
+		"/home/tayba/Desktop/DS/insert.h",
+		"/home/tayba/Desktop/DS/useInsert.c",
+		"/home/tayba/Desktop/DS/insert."
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"home-1.jpg",
+			"header.jpg",
+			"header.png",
+			");\n",
+			"Description",
+			"char",
+			"markup",
+			"ext",
+			"Subfield",
+			"subfield",
+			"></",
+			"main5.png"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "base.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

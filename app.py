@@ -217,7 +217,17 @@ def qr_decode():
     if request.method == 'POST':
         f = request.files['file']
         qr = qrtools.QR()
-        print qr.decode(file)
+        qr.decode(f)
+        l = qr.data
+        phone=l[0:10]
+        cre = l[10:]
+        user = User.query.filter_by(id=current_user.id).first()
+        user.wallet = user.wallet + int(cre) 
+        db.session.add(user)
+        db.session.commit()
+        print current_user.wallet
+        print user.wallet
+
     return render_template('qr_decode.html')  
         
 
@@ -226,4 +236,4 @@ db.create_all()
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port = 5025, debug=True)
+    app.run(host='0.0.0.0', port = 5026, debug=True)
