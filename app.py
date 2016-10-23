@@ -14,6 +14,8 @@ from wtforms import StringField, PasswordField, SubmitField
 from wtforms.validators import Required, Length, EqualTo
 import onetimepass
 import pyqrcode
+from flask.ext.qrcode import QRcode
+
 
 # create application instance
 app = Flask(__name__)
@@ -23,8 +25,7 @@ app.config.from_object('config')
 bootstrap = Bootstrap(app)
 db = SQLAlchemy(app)
 lm = LoginManager(app)
-
-
+QRcode(app)
 class User(UserMixin, db.Model):
     """User model."""
     __tablename__ = 'users'
@@ -32,7 +33,8 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(64), index=True)
     password_hash = db.Column(db.String(128))
     otp_secret = db.Column(db.String(16))
-    credits =  db.Column(db.Integer)
+    wallet =  db.Column(db.Integer)
+    phone_number = db.Column(db.String(11), unique = True)
 
     def __init__(self, **kwargs):
         super(User, self).__init__(**kwargs)
@@ -71,6 +73,7 @@ class RegisterForm(Form):
     password = PasswordField('Password', validators=[Required()])
     password_again = PasswordField('Password again',
                                    validators=[Required(), EqualTo('password')])
+    phone_number =StringField('Phone Number', validators=[Required(), Length(1, 13)])
     submit = SubmitField('Register')
 
 
@@ -81,6 +84,10 @@ class LoginForm(Form):
     token = StringField('Token', validators=[Required(), Length(6, 6)])
     submit = SubmitField('Login')
 
+class creditsTransfer(Form):
+    credits_transfer = StringField('Transfer Credits', validators=[Required(), Length(1, 10)])
+    phone_number = StringField('Phone Number', validators=[Required(), Length(10)])
+    submit = SubmitField('Transfer')
 
 @app.route('/')
 def index():
@@ -100,7 +107,7 @@ def register():
             flash('Username already exists.')
             return redirect(url_for('register'))
         # add new user to the database
-        user = User(username=form.username.data, password=form.password.data, credits = 100)
+        user = User(username=form.username.data, password=form.password.data, wallet = 100)
         db.session.add(user)
         db.session.commit()
 
@@ -108,6 +115,7 @@ def register():
         session['username'] = user.username
         return redirect(url_for('two_factor_setup'))
     return render_template('register.html', form=form)
+
 
 
 @app.route('/twofactor')
@@ -124,6 +132,28 @@ def two_factor_setup():
         'Pragma': 'no-cache',
         'Expires': '0'}
 
+
+@app.route('/give_money', methods=['GET', 'POST'])
+def give_money():
+    form = creditsTransfer()
+    if form.validate_on_submit() :
+        img = form.phone_number.data + form.credits_transfer.data
+        count = int(form.credits_transfer.data)
+        user = User.query.filter_by(id=current_user.id).first()
+        user.wallet = user.wallet - count
+        
+        db.session.add(user)
+        db.session.commit()
+        print current_user.wallet
+        print user.wallet
+        return redirect(url_for('qr_gen',img=img)) 
+    return render_template('give_money.html', form=form)
+
+@app.route('/qr_gen/<img>')
+def qr_gen(img):
+    user = User.query.filter_by(id=current_user.id).first()
+    print user.wallet
+    return render_template('qr_gen.html',img=img)
 
 @app.route('/qrcode')
 def qrcode():
@@ -171,6 +201,7 @@ def login():
 @app.route('/logout')
 def logout():
     """User logout route."""
+    print "logout"
     logout_user()
     return redirect(url_for('index'))
 
@@ -180,4 +211,4 @@ db.create_all()
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port = 5001, debug=True)
+    app.run(host='0.0.0.0', port = 5027, debug=True)
