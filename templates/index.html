@@ -7,8 +7,8 @@
     <a href="{{url_for('give_money')}}" >Give money </a>
     <a  href="{{url_for('qr_decode')}}">Take money </button>
     {% else %}
-    <h1>Register Yourself to Explore Us!</h1>
-    <p>Please <a href="{{ url_for('register') }}">Register</a> or <a href="{{ url_for('login') }}">Login</a>.</p>
+    <h1 style="text-align:center;top-margin:60px;padding-top:150px;"><b>Register Yourself to Explore Us!</b></h1>
+    <p style="font-size:25px; text-align:center;padding-top:10px;">Please <a href="{{ url_for('register') }}">Register</a> or <a href="{{ url_for('login') }}">Login</a>.</p>
     
     {% endif %}
 {% endblock %}
