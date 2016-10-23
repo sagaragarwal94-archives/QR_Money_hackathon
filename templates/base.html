@@ -1,5 +1,4 @@
 {% extends "bootstrap/base.html" %}
-
 {% block title %}Wallet{% endblock %}
 
 {% block navbar %}
@@ -12,17 +11,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{ url_for('index') }}">Wallet: Give Money,Take Money</a>
+            <a class="navbar-brand" href="{{ url_for('index') }}" style="height:100px;"><h2 style="color:white;font-family:sans-serif;height:100px;text-align:left;top-margin:auto;left-margin:0px;"><b style="color:yellow;font-size:40px;">Wallet</b>: Give Money,Take Money</h2></a>
         </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="{{ url_for('index') }}">Home</a></li>
+        <div class="navbar-collapse collapse" style="float:right;padding-left:300px;margin-top:6px;">
+            <ul class="nav navbar-nav" >
+                <li><a href="{{ url_for('index') }}" ><h3 style="color:white;"><b>Home</b></h3></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 {% if current_user.is_authenticated() %}
-                <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                <li style="display:inline;"><a href="{{ url_for('logout') }}" ><h3 style="color:white;"><b>Log Out</b></h3></a></li>
                 {% else %}
-                <li><a href="{{ url_for('login') }}">Log In</a></li>
+                <li style="display:inline;"><a href="{{ url_for('login') }}"><h3 style="color:white;"><b>Log In</b></h3></a></li>
                 {% endif %}
             </ul>
         </div>
