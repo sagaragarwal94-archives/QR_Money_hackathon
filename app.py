@@ -2,7 +2,7 @@
 import os
 import base64
 from io import StringIO
-from flask import Flask, render_template, redirect, url_for, flash, session, \
+from flask import Flask, render_template, request, redirect, url_for, flash, session, \
     abort
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask.ext.sqlalchemy import SQLAlchemy
@@ -15,8 +15,9 @@ from wtforms.validators import Required, Length, EqualTo
 import onetimepass
 import pyqrcode
 from flask.ext.qrcode import QRcode
-
-
+from werkzeug.utils import secure_filename
+import qrtools
+import zbar
 # create application instance
 app = Flask(__name__)
 app.config.from_object('config')
@@ -26,6 +27,9 @@ bootstrap = Bootstrap(app)
 db = SQLAlchemy(app)
 lm = LoginManager(app)
 QRcode(app)
+
+
+
 class User(UserMixin, db.Model):
     """User model."""
     __tablename__ = 'users'
@@ -140,14 +144,17 @@ def give_money():
         img = form.phone_number.data + form.credits_transfer.data
         count = int(form.credits_transfer.data)
         user = User.query.filter_by(id=current_user.id).first()
-        user.wallet = user.wallet - count
-        
+        user.wallet = user.wallet - count 
         db.session.add(user)
         db.session.commit()
         print current_user.wallet
         print user.wallet
         return redirect(url_for('qr_gen',img=img)) 
     return render_template('give_money.html', form=form)
+
+@app.route('/take_money', methods = ['GET', 'POST'])
+def take_money():
+    pass
 
 @app.route('/qr_gen/<img>')
 def qr_gen(img):
@@ -205,10 +212,18 @@ def logout():
     logout_user()
     return redirect(url_for('index'))
 
+@app.route('/qr_decode', methods=['GET','POST'])
+def qr_decode():
+    if request.method == 'POST':
+        f = request.files['file']
+        qr = qrtools.QR()
+        print qr.decode(file)
+    return render_template('qr_decode.html')  
+        
 
 # create database tables if they don't exist yet
 db.create_all()
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port = 5027, debug=True)
+    app.run(host='0.0.0.0', port = 5025, debug=True)

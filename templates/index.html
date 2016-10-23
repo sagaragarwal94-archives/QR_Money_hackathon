@@ -5,7 +5,7 @@
     <h1>Welcome, {{ current_user.username }}!</h1>
     <hr>Credits To Spend: {{current_user.wallet}}!</hr>
     <a href="{{url_for('give_money')}}" >Give money </a>
-    <button type ="button" href="#">Take money </button>
+    <a  href="{{url_for('qr_decode')}}">Take money </button>
     {% else %}
     <h1>Register Yourself to Explore Us!</h1>
     <p>Please <a href="{{ url_for('register') }}">Register</a> or <a href="{{ url_for('login') }}">Login</a>.</p>
