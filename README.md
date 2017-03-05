@@ -13,3 +13,10 @@ It works offline.
 <li>Flask as the web framework</li>
 </ol>
 
+## Developers
+```
+Sagar Chand Agarwal
+Himanshi Khandelwal
+Tayba Wasim
+Karan Tatiwala
+```
